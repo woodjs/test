@@ -2,10 +2,32 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>测试</title>
+    <style type="text/css">
+        body{
+            cursor:  url(img/cursor.ico),auto;
+        }
+        a{
+            display: inline-block;
+            height:32px;
+            line-height: 32px;
+            width: 120px;
+            text-align: center;
+            color:#fff;
+            background: #ccc;
+            box-shadow: 1px 1px 1px #fff inset, -1px -1px 1px #999 inset;
+        }
+    </style>
 </head>
 <body>
+    <a href="#">ceshi</a>
     <script type="text/javascript">
+        var arr = [1, 1, 2, 3, 5, 8, 13, 21, 34];
+        function getFb(n) {
+            return n === 1 ? 1 : (n === 2 ? 1 : getFb(n - 1) + getFb(n - 2));
+        }
+
+
 
     </script>
 </body>

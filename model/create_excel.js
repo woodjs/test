@@ -9,8 +9,16 @@ function createExcel(tplUri, data, destUri, callback) {
             return;
         }
         ejsExcel.renderExcelCb(exlBuf, data, function(exlBuf){
-            var target = destUri || 'temp.xlsx';
-            fs.writeFile(target, exlBuf, function (err) {
+            var target = destUri || './temp/temp.xlsx';
+            //fs.writeFile(target, exlBuf, function (err) {
+            //    if (err) {
+            //        console.log('error, when write data into excel !');
+            //        return;
+            //    }
+            //    callback && callback(target);
+            //});
+            var doc = fs.createWriteStream(target);
+            doc.end(exlBuf, function (err) {
                 if (err) {
                     console.log('error, when write data into excel !');
                     return;

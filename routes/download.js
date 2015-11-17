@@ -26,7 +26,7 @@ router.route('/').get(function (req, res) {
         ];
 
     createExcel(tplUri, data, '', function (destUri) {
-        res.download(destUri, 'hahah.xlsx', function (temp) {
+        res.download(destUri, 'abd.xlsx', function (temp) {
             console.log(temp);
         });
     });

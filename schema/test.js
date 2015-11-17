@@ -14,3 +14,13 @@ var testSchema = new mongoose.Schema({
         'type': 'String'
     }
 });
+
+testSchema.methods.getPwd = function () {
+    return this.password;
+};
+
+testSchema.statics.getLength = function () {
+    return this;
+};
+
+module.exports = testSchema;
