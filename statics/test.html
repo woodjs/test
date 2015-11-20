@@ -14,21 +14,30 @@
             width: 120px;
             text-align: center;
             color:#fff;
-            background: #ccc;
+            background-color: #ccc;
+            background-image:-webkit-linear-gradient(top, #eee, #ccc);
+            background-image:-moz-linear-gradient(bottom, #eee, #ccc);
+            background-image:-o-linear-gradient(bottom, #eee, #ccc);
+            background-image:linear-gradient(to bottom, #eee, #ccc);
             box-shadow: 1px 1px 1px #fff inset, -1px -1px 1px #999 inset;
         }
     </style>
+    <script type="text/javascript">
+
+    </script>
 </head>
 <body>
-    <a href="#">ceshi</a>
+    <a href="#">ceshi1</a>
+    <a href="#">ceshi2</a>
+    <a href="#">ceshi3</a>
+    <a href="#">ceshi4</a>
+    <script src="../public/javascripts/jquery-1.11.3.min.js"></script>
+    <script src="js/sort.js"></script>
     <script type="text/javascript">
-        var arr = [1, 1, 2, 3, 5, 8, 13, 21, 34];
-        function getFb(n) {
-            return n === 1 ? 1 : (n === 2 ? 1 : getFb(n - 1) + getFb(n - 2));
-        }
-
-
-
+        "use strict";
+        //冒泡排序
+        var arr = bubbleSort([3, 4, 1, 3, 22, 41, 3, 2, 44, 22]);
+        console.log(arr);
     </script>
 </body>
 </html>
