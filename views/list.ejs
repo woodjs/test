@@ -1,0 +1,17 @@
+<%- include ./header.ejs %>
+
+        <h2><%= header %></h2>
+
+        <ul>
+            <% for (var i = 0; i < userList.length; i++) { %>
+                <li><%= userList[i].username %></li>
+            <% } %>
+        </ul>
+
+        <script type="text/javascript" src="/javascripts/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+
+            });
+        </script>
+<%- include ./footer.ejs %>

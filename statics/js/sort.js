@@ -43,12 +43,54 @@ function quickSort(arr) {
  * 基数排序——桶排序
  *
  * @param {Array} arr
+ * @param {Number} count
  * @return {Array}
  */
-function bucketSort(arr) {
-
-
-    return arr;
+function bucketSort(arr, count) {
+    if (arr.length === 0) {
+        return [];
+    }
+    count = count || (count > 1 ? count : 10);
+    var min = arr[0];
+    var max = arr[0];
+    for (var i = 1; i < arr.length; i++) {
+        min = min < arr[i] ? min : arr[i];
+        max = max > arr[i] ? max : arr[i];
+    }
+    var delta = (max - min + 1) / count;
+    var buckets = [];
+    for (var i = 0; i < arr.length; i++) {
+        var index = Math.floor((arr[i] - min) / delta);
+        if (buckets[index]) {
+            for (var j = 0; j < buckets[index].length; j++) {
+                if (arr[i] > buckets[index][j]) {
+                    if (typeof buckets[index][j + 1] === 'undefined') {
+                        buckets[index].push(arr[i]);
+                        break;
+                    }
+                    if (arr[i] < buckets[index][j + 1]) {
+                        buckets[index].splice(j + 1, 0, arr[i]);
+                        break;
+                    }
+                } else {
+                    buckets[index].splice(j, 0, arr[i]);
+                    break;
+                }
+            }
+        } else {
+            var bucket = [];
+            bucket.push(arr[i]);
+            buckets[index] = bucket;
+        }
+    }
+    var result = [];
+    for (var i = 0; i < buckets.length; i++) {
+        if (!buckets[i]) {
+            buckets[i] = [];
+        }
+        result = result.concat(buckets[i]);
+    }
+    return result;
 }
 
 

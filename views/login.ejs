@@ -1,0 +1,20 @@
+<% include ./header.ejs %>
+
+        <h2><%= header %></h2>
+        <form action="/login" method="post">
+            <ul>
+                <li>用户名：<input type="text" name="username" placeholder="请输入用户名" /></li>
+                <li>密码：<input type="password" id="password1" name="password" placeholder="请设置密码" /></li>
+                <!--<li>请重复密码密码：<input type="password" id="password2" name="password"  /></li>-->
+            </ul>
+            <input type="submit" value="提交" />
+        </form>
+
+
+        <script type="text/javascript" src="/javascripts/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+
+            });
+        </script>
+<% include ./footer.ejs %>
