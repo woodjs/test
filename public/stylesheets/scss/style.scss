@@ -1,0 +1,15 @@
+$fontSize: 16px;
+$fontColor: #333;
+$bgColor: #eee;
+$themeFontColor: #529bea;
+
+body{
+  font-size:$fontSize;
+  background: $bgColor;
+  color:#333;
+}
+
+a{
+  color: $themeFontColor;
+}
+

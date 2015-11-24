@@ -1,8 +1,9 @@
 body {
-    padding:0;
-    background: #eee;
-    color:#333;
-}
+  font-size: 16px;
+  background: #eee;
+  color: #333; }
+
 a {
-    color: #00B7FF;
-}
+  color: #529bea; }
+
+/*# sourceMappingURL=style.css.map */

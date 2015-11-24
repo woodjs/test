@@ -6,12 +6,6 @@ var testSchema = new mongoose.Schema({
     },
     'password': {
         'type': 'String'
-    },
-    'title': {
-        'type': 'String'
-    },
-    'content': {
-        'type': 'String'
     }
 });
 

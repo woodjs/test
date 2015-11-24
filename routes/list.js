@@ -14,13 +14,16 @@ router.route('/').get(function (req, res) {
         if (err) {
             console.log(err);
         }
-        console.log(docs);
-        res.render('list', {
-            title: '用户列表页',
-            header: '用户列表',
-            userList: docs
-        });
+        console.log(docs.length);
+        if (docs.length === 0) {
 
+        } else {
+            res.render('list', {
+                title: '用户列表页',
+                header: '用户列表',
+                userList: docs
+            });
+        }
     });
 
 }).post(function (req, res) {

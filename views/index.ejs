@@ -3,9 +3,65 @@
         <h1><%= header %></h1>
         <a href="/login">请先登录</a>
         <a href="/list">查看所有用户</a>
+        <span id="save-code">保存编码</span>
+        <span id="show-dialog">展示弹出框</span>
+        <textarea id="code" style="opacity: 0;"><%- data %></textarea>
 
         <script type="text/javascript" src="/javascripts/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="/javascripts/easydialog.min.js"></script>
+        <script type="text/javascript" src="/javascripts/codemirror/codemirror.js"></script>
+        <script type="text/javascript" src="/javascripts/codemirror/mode/javascript/javascript.js"></script>
         <script type="text/javascript">
+            var textarea = document.getElementById('code');
+            var myCodeMirror = createCodeMirror(textarea, 'function');
+            myCodeMirror.setSize('50%', '400px');
 
+            function createCodeMirror(textarea) {
+                return CodeMirror.fromTextArea(textarea, {
+                    value: textarea.value,
+                    mode: 'javascript',
+                    lineNumbers: true,
+                    lineWrapping: true,
+                    theme: 'rubyblue',
+                    indentUnit : 2,
+                    smartIndent: true,
+                    tabSize: 2
+                });
+            }
+
+            $(function () {
+
+                $('#show-dialog').on('click', function () {
+                    easyDialog.open({
+                        container: {
+                            header: '这里是提示的标题',
+                            content: '这里是提示内容啊，请大家主语!',
+                            yesFn: function () {
+                                console.log('yes');
+                            },
+                            noFn: true
+                        },
+                        drag: true,
+                        fixed : true,
+                        callback: function () {
+                            console.log('closed');
+                        }
+                    });
+                });
+
+                $('#save-code').on('click', function () {
+                    $.ajax({
+                        url: '/',
+                        type: 'post',
+                        data: {
+                            data: myCodeMirror.getValue()
+                        }
+                    }).done(function (res) {
+                        alert(res.data);
+                    }).fail(function () {
+                        alert('why');
+                    });
+                });
+            });
         </script>
 <%- include ./footer.ejs %>
