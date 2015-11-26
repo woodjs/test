@@ -1,19 +1,33 @@
 <% include ./header.ejs %>
 
         <h2><%= header %></h2>
-        <form action="/login" method="post">
+        <form id="test" action="/login" method="post">
             <ul>
                 <li>用户名：<input type="text" name="username" placeholder="请输入用户名" /></li>
                 <li>密码：<input type="password" id="password1" name="password" placeholder="请设置密码" /></li>
                 <!--<li>请重复密码密码：<input type="password" id="password2" name="password"  /></li>-->
             </ul>
-            <input type="submit" value="提交" />
+            <span id="btn-submit">提交</span>
         </form>
 
         <script type="text/javascript" src="/javascripts/jquery-1.11.3.min.js"></script>
         <script type="text/javascript">
             $(function () {
-
+                $('#btn-submit').on('click', function () {
+                    $.ajax({
+                        url: '/login',
+                        type: 'post',
+                        contentType: 'application/json',
+                        data: JSON.stringify({
+                            username: $('[type="text"]').val(),
+                            password: $('[type="password"]').val()
+                        })
+                    }).done(function (res) {
+                        console.log(res);
+                    }).fail(function () {
+                        console.log('error');
+                    });
+                });
             });
         </script>
 <% include ./footer.ejs %>
