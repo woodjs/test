@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>测试</title>
+  <style type="text/css">
+    .add-contact-info {
+      position: absolute;
+      left: 0;
+      top: 21px;
+      width: 370px;
+      height: 38px;
+      padding: 20px 0 20px 108px;
+      border: 1px dashed #6acbff;
+      background: #ebf8ff url(img/add_contact.png) 30px center no-repeat;
+    }
+
+    .add-contact-info .model-1 {
+      margin: 0 20px 0 0;
+      height: 38px;
+      padding: 0 20px 0 0;
+      border-right: 1px solid #6acbff;
+      float: left;
+      list-style: none;
+    }
+
+    .add-contact-info .model-1 li {
+      font-size: 12px;
+      font-weight: bold;
+      color: #666;
+      line-height: 14px;
+      height: 14px;
+    }
+
+    .add-contact-info .model-1 li span {
+      color: #d72016;
+    }
+
+    .add-contact-info .model-1 .last {
+      margin-top: 10px;
+    }
+
+    .add-contact-info .model-1.model-2 {
+      padding-right: 0;
+      border: none;
+      margin-right: 0;
+    }
+
+    .add-contact-info .model-1.model-2 li {
+      font-size: 14px;
+      font-weight: bold;
+      color: #666;
+      line-height: 16px;
+      height: 16px;
+    }
+
+    .add-contact-info .model-1.model-2 li span {
+      color: #d72016;
+    }
+
+    .add-contact-info .model-1.model-2 .last {
+      margin-top: 6px;
+    }
+  </style>
+</head>
+<body>
+<div class="add-contact-info">
+  <ul class="model-1">
+    <li>客服电话1：<span>021-20252866</span></li>
+    <li class="last">客服电话2：<span>021-50271393</span></li>
+  </ul>
+  <ul class="model-1 model-2">
+    <li>客服支持时间:</li>
+    <li class="last"><span>09:00—17:00  周一至周五</span></li>
+  </ul>
+</div>
+<script src="../public/javascripts/jquery-1.11.3.min.js"></script>
+<script src="js/sort.js"></script>
+<script src="js/ejs.min.js"></script>
+<script type="text/javascript">
+  "use strict";
+</script>
+</body>
+</html>
