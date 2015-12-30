@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link type="text/css" rel="stylesheet" href="../js/lib/ext-4.2.1/resources/css/ext-all.css" />
+  <script type="text/javascript" src="../js/lib/ext-4.2.1/bootstrap.js"></script>
+  <script type="text/javascript" src="../js/lib/ext-4.2.1/locale/ext-lang-zh_CN.js"></script>
+</head>
+<body>
+  <script>
+    Ext.onReady(function () {
+      Ext.QuickTips.init();
+      var form = new Ext.form.Panel({
+        title: '表单',
+        height: 120,
+        width: 400,
+        frame: true,
+        renderTo: document.body,
+        defaults: {
+          labelSeparator: ':',
+          labelWidth: 50,
+          width:150,
+          allowBlank: false,
+          blankText: '不能为空',
+          labelAlign: 'left',
+          msgTarget: 'qtip'
+        },
+        items: [
+          {
+            xtype: 'textfield',
+            fieldLabel: '姓名',
+            selectOnFocus: true
+          },
+          {
+            xtype: 'numberfield',
+            fieldLabel: '年龄'
+          }
+        ]
+      });
+    });
+  </script>
+</body>
+</html>

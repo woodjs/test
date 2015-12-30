@@ -1,0 +1,309 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background: black;
+  font-family: "Microsoft yahei", Arial; }
+
+a {
+  color: #b00d15; }
+
+ul, dl {
+  list-style: none; }
+
+.demo-box {
+  width: 1030px;
+  margin: 0 auto;
+  background: #fff;
+  padding-top: 1px; }
+
+.dialog-grid-title {
+  background: #808285;
+  margin: 2px;
+  overflow: hidden;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #fff;
+  height: 22px;
+  line-height: 22px;
+  position: relative;
+  cursor: move; }
+  .dialog-grid-title .title {
+    margin-left: 10px; }
+  .dialog-grid-title .btn-close {
+    cursor: pointer;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background: url(images/allImg.png) -73px -144px no-repeat;
+    position: absolute;
+    top: 3px;
+    right: 10px; }
+    .dialog-grid-title .btn-close:hover {
+      background: url(images/allImg.png) -54px -144px no-repeat; }
+
+.dialog-grid-query {
+  margin: 5px 10px 0;
+  background: #eaeaea;
+  border-radius: 5px;
+  overflow: hidden;
+  font-size: 12px;
+  padding: 5px 0 15px; }
+  .dialog-grid-query .wrapper-input-group {
+    max-height: 96px;
+    overflow-y: auto; }
+  .dialog-grid-query .query-input-group {
+    width: 90%;
+    margin: 0 auto; }
+    .dialog-grid-query .query-input-group input:focus, .dialog-grid-query .query-input-group select:focus {
+      outline: 0; }
+    .dialog-grid-query .query-input-group .model-cols-4 {
+      overflow: hidden;
+      height: 32px;
+      line-height: 32px; }
+      .dialog-grid-query .query-input-group .model-cols-4 label {
+        font-weight: bold; }
+      .dialog-grid-query .query-input-group .model-cols-4 .item-input {
+        display: inline-block;
+        float: left;
+        margin-right: 30px; }
+      .dialog-grid-query .query-input-group .model-cols-4 select {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        width: 110px;
+        padding: 2px;
+        margin: 0; }
+      .dialog-grid-query .query-input-group .model-cols-4 .width-200 {
+        width: 200px; }
+    .dialog-grid-query .query-input-group .model-cols-2 {
+      overflow: hidden;
+      height: 32px;
+      line-height: 32px; }
+      .dialog-grid-query .query-input-group .model-cols-2 .item-input {
+        display: inline-block;
+        float: left;
+        width: 47%; }
+      .dialog-grid-query .query-input-group .model-cols-2 label {
+        font-weight: bold;
+        display: inline-block;
+        width: 55px; }
+      .dialog-grid-query .query-input-group .model-cols-2 .width-104 {
+        width: 104px; }
+      .dialog-grid-query .query-input-group .model-cols-2 input[type=text] {
+        -webkit-appearance: none;
+        width: 180px;
+        border: 1px solid #ddd;
+        padding: 2px; }
+  .dialog-grid-query .query-btn-group {
+    margin: 10px 0 0;
+    height: 26px;
+    line-height: 26px;
+    text-align: center; }
+    .dialog-grid-query .query-btn-group .btn {
+      display: inline-block;
+      color: #fff;
+      background: #808285;
+      height: 26px;
+      padding: 0 10px;
+      margin: 0 5px;
+      border-radius: 5px;
+      text-decoration: none; }
+      .dialog-grid-query .query-btn-group .btn:hover {
+        cursor: pointer;
+        background: #b00d15; }
+
+.dialog-grid-table {
+  margin: 10px 10px 0;
+  font-size: 12px; }
+  .dialog-grid-table thead {
+    background-color: #abacac; }
+    .dialog-grid-table thead th {
+      color: #fff;
+      text-align: center;
+      cursor: default;
+      font-weight: bold;
+      padding: 0 5px;
+      height: 26px;
+      vertical-align: middle;
+      word-break: keep-all;
+      white-space: nowrap; }
+      .dialog-grid-table thead th div {
+        height: 26px;
+        line-height: 26px; }
+      .dialog-grid-table thead th .icon-sort {
+        display: inline;
+        *display: inline-block;
+        margin-left: 3px;
+        padding: 0 13px 0 0;
+        background: url(images/grid_icons.png) -64px center no-repeat; }
+    .dialog-grid-table thead .sort-desc .icon-sort {
+      display: inline;
+      margin-left: 3px;
+      padding: 0 13px 0 0;
+      background: url(images/grid_icons.png) -16px center no-repeat; }
+    .dialog-grid-table thead .sort-asc .icon-sort {
+      display: inline;
+      margin-left: 3px;
+      padding: 0 13px 0 0;
+      background: url(images/grid_icons.png) 0 center no-repeat; }
+  .dialog-grid-table .table-model-normal {
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden; }
+    .dialog-grid-table .table-model-normal .width-half {
+      width: 50%; }
+    .dialog-grid-table .table-model-normal table {
+      margin: 0 auto;
+      width: 100%;
+      border-collapse: collapse;
+      border-spacing: 0; }
+    .dialog-grid-table .table-model-normal tbody td {
+      text-align: center;
+      padding: 0 5px;
+      height: 26px;
+      vertical-align: middle;
+      word-break: keep-all;
+      white-space: nowrap; }
+    .dialog-grid-table .table-model-normal tbody div {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      margin: 0 auto;
+      cursor: pointer;
+      max-width: 140px;
+      text-align: center; }
+    .dialog-grid-table .table-model-normal tbody a {
+      color: #b00d15;
+      text-decoration: none;
+      margin: 0 3px; }
+      .dialog-grid-table .table-model-normal tbody a:hover {
+        text-decoration: underline; }
+  .dialog-grid-table .table-model-divide {
+    margin: 0 auto;
+    padding-right: 148px;
+    position: relative; }
+    .dialog-grid-table .table-model-divide .wrapper-table {
+      width: 100%;
+      *height: 306px;
+      border-top-left-radius: 5px;
+      overflow-x: auto; }
+    .dialog-grid-table .table-model-divide .wrapper-btn-list {
+      width: 148px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 20;
+      background: #fff; }
+    .dialog-grid-table .table-model-divide table {
+      width: auto;
+      border-spacing: 0;
+      border-collapse: collapse; }
+    .dialog-grid-table .table-model-divide tbody td {
+      text-align: center;
+      padding: 0 5px;
+      height: 26px;
+      vertical-align: middle;
+      overflow: hidden;
+      word-break: keep-all;
+      white-space: nowrap; }
+    .dialog-grid-table .table-model-divide tbody div {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      margin: 0 auto;
+      cursor: pointer;
+      max-width: 140px;
+      text-align: center; }
+    .dialog-grid-table .table-model-divide tbody a {
+      color: #b00d15;
+      text-decoration: none;
+      margin: 0 3px; }
+      .dialog-grid-table .table-model-divide tbody a:hover {
+        text-decoration: underline; }
+    .dialog-grid-table .table-model-divide .list-header {
+      color: #fff;
+      font-weight: bold;
+      height: 26px;
+      line-height: 26px;
+      background-color: #abacac;
+      border-top-right-radius: 5px;
+      text-align: center; }
+    .dialog-grid-table .table-model-divide .list-content div {
+      height: 26px;
+      line-height: 26px;
+      text-align: center; }
+      .dialog-grid-table .table-model-divide .list-content div a {
+        color: #b00d15;
+        text-decoration: none;
+        margin: 0 3px; }
+        .dialog-grid-table .table-model-divide .list-content div a:hover {
+          text-decoration: underline; }
+
+.dialog-grid-page {
+  line-height: 32px;
+  width: 500px;
+  margin: 0 auto;
+  font-size: 12px;
+  padding: 10px 0 10px;
+  cursor: default; }
+  .dialog-grid-page .page-num-box {
+    margin: 0 10px; }
+    .dialog-grid-page .page-num-box b {
+      color: #b00d15;
+      margin: 0 5px; }
+  .dialog-grid-page .btn {
+    display: inline-block;
+    height: 10px;
+    width: 14px;
+    margin-right: 10px;
+    cursor: pointer; }
+  .dialog-grid-page label {
+    margin-left: 10px; }
+  .dialog-grid-page input {
+    width: 25px;
+    padding: 2px 5px;
+    color: #b00d15;
+    margin-right: 10px; }
+    .dialog-grid-page input:focus {
+      outline: 0; }
+  .dialog-grid-page .btn-go {
+    display: inline-block;
+    color: #fff;
+    background: #808285;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    text-decoration: none; }
+    .dialog-grid-page .btn-go:hover {
+      cursor: pointer;
+      background: #b00d15; }
+  .dialog-grid-page .btn-first {
+    background: url(images/allImg.png) 0 -202px no-repeat; }
+    .dialog-grid-page .btn-first:hover {
+      background: url(images/allImg.png) 0 -216px no-repeat; }
+    .dialog-grid-page .btn-first.disable {
+      background: url(images/allImg.png) 0 -231px no-repeat; }
+  .dialog-grid-page .btn-prev {
+    background: url(images/allImg.png) -24px -202px no-repeat; }
+    .dialog-grid-page .btn-prev:hover {
+      background: url(images/allImg.png) -24px -216px no-repeat; }
+    .dialog-grid-page .btn-prev.disable {
+      background: url(images/allImg.png) -24px -231px no-repeat; }
+  .dialog-grid-page .btn-next {
+    background: url(images/allImg.png) -45px -202px no-repeat; }
+    .dialog-grid-page .btn-next:hover {
+      background: url(images/allImg.png) -45px -216px no-repeat; }
+    .dialog-grid-page .btn-next.disable {
+      background: url(images/allImg.png) -45px -231px no-repeat; }
+  .dialog-grid-page .btn-last {
+    background: url(images/allImg.png) -68px -202px no-repeat; }
+    .dialog-grid-page .btn-last:hover {
+      background: url(images/allImg.png) -68px -216px no-repeat; }
+    .dialog-grid-page .btn-last.disable {
+      background: url(images/allImg.png) -68px -231px no-repeat; }
+
+/*# sourceMappingURL=grid.css.map */

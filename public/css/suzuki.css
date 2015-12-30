@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background: black;
+  font-family: "Microsoft yahei", Arial; }
+
+a {
+  color: #007acd; }
+
+ul, dl {
+  list-style: none; }
+
+.demo-box {
+  width: 570px;
+  margin: 0 auto;
+  background: #fff; }
+
+.module-system-intro {
+  font-size: 12px;
+  padding: 15px 20px 20px; }
+  .module-system-intro .intro-logo {
+    height: 43px;
+    margin-bottom: 10px; }
+    .module-system-intro .intro-logo img {
+      display: block;
+      margin: 0 auto;
+      height: 43px; }
+  .module-system-intro .red {
+    color: #d92016; }
+  .module-system-intro .blue {
+    color: #007acd; }
+  .module-system-intro .text-indent-2 {
+    text-indent: 2em; }
+  .module-system-intro .margin-top-4 {
+    margin-top: 4px; }
+  .module-system-intro dl {
+    font-size: 12px;
+    line-height: 24px; }
+  .module-system-intro dd b, .module-system-intro dd span, .module-system-intro dd a {
+    margin: 0 2px; }
+  .module-system-intro .contact-info {
+    position: relative;
+    padding-top: 5px; }
+  .module-system-intro .icon-man {
+    position: absolute;
+    display: inline-block;
+    width: 131px;
+    height: 108px;
+    background: url(images/contact_icons.png) 0 0 no-repeat;
+    right: 30px;
+    top: 5px;
+    z-index: 5; }
+  .module-system-intro li {
+    margin: 5px 0;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    display: block;
+    padding-left: 30px; }
+  .module-system-intro .tel {
+    background: url(images/contact_icons.png) 0 -108px no-repeat; }
+    .module-system-intro .tel b {
+      margin-right: 10px; }
+  .module-system-intro .qq {
+    background: url(images/contact_icons.png) 0 -132px no-repeat; }
+  .module-system-intro .email {
+    background: url(images/contact_icons.png) 0 -156px no-repeat; }
+  .module-system-intro .time {
+    background: url(images/contact_icons.png) 0 -180px no-repeat; }
+
+/*# sourceMappingURL=suzuki.css.map */

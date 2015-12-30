@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-size: 14px;
+  background: #fff;
+  font-family: "Microsoft yahei", Arial; }
+
+a {
+  color: #529bea; }
+
+.module-contact-us {
+  width: 1024px;
+  margin: 0 auto; }
+  .module-contact-us h4 {
+    font-size: 18px;
+    height: 26px;
+    line-height: 26px;
+    margin-top: 25px;
+    padding-left: 18px;
+    font-weight: normal; }
+  .module-contact-us .banner-contact {
+    display: block;
+    margin: 12px 0 15px;
+    padding-left: 75px; }
+    .module-contact-us .banner-contact .icon-contact {
+      display: inline-block;
+      width: 131px;
+      height: 108px;
+      background: url(images/icons_contact.png) 0 0 no-repeat; }
+  .module-contact-us .item-contact {
+    padding: 15px 0 15px;
+    border-bottom: 1px solid #f4f4f4;
+    overflow: hidden; }
+    .module-contact-us .item-contact .icon {
+      display: inline-block;
+      width: 80px;
+      height: 48px;
+      float: left; }
+    .module-contact-us .item-contact a {
+      color: #007acd;
+      text-decoration: underline; }
+    .module-contact-us .item-contact dl {
+      float: left;
+      margin-left: 10px; }
+    .module-contact-us .item-contact dt {
+      line-height: 20px;
+      font-size: 14px; }
+    .module-contact-us .item-contact dd {
+      font-size: 12px;
+      margin-top: 10px; }
+  .module-contact-us .item-tel .icon {
+    background: url(images/icons_contact.png) -131px -8px no-repeat; }
+  .module-contact-us .item-tel span {
+    font-weight: bold;
+    color: red;
+    margin-right: 24px; }
+  .module-contact-us .item-qq .icon {
+    background: url(images/icons_contact.png) -211px -8px no-repeat; }
+  .module-contact-us .item-qq span {
+    margin-right: 45px; }
+  .module-contact-us .item-email .icon {
+    background: url(images/icons_contact.png) -286px -8px no-repeat; }
+  .module-contact-us .item-time {
+    border: none; }
+    .module-contact-us .item-time .icon {
+      background: url(images/icons_contact.png) -371px -8px no-repeat; }
+    .module-contact-us .item-time div {
+      padding-left: 15px;
+      margin-bottom: 10px;
+      line-height: 18px;
+      background: url(images/icons_contact.png) -451px 0 no-repeat; }
+
+/*# sourceMappingURL=contact.css.map */

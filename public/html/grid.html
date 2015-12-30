@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link type="text/css" rel="stylesheet" href="../css/grid.css"/>
+</head>
+<body>
+<div class="demo-box">
+  <div class="dialog-grid-title">
+    <span class="title">高级搜索</span>
+    <span class="btn-close"></span>
+  </div>
+  <div class="dialog-grid-query">
+    <div class="wrapper-input-group">
+      <div class="query-input-group">
+        <div class="model-cols-4">
+          <div class="item-input">
+            <label>品牌：</label>
+            <select>
+              <option value="">请选择 品牌...</option>
+              <option value="100000001" selected="selected"> 长安铃木</option>
+            </select>
+          </div>
+          <div class="item-input">
+            <label>车系：</label>
+            <select>
+              <option value="">请选择 车系...</option>
+              <option value="YL111" selected="selected"> 启悦系列</option>
+              <option value="YFE"> 维特拉系列轿车</option>
+              <option value="Y1W14"> 羚羊系列</option>
+              <option value="YC5A1"> 新奥拓系列</option>
+              <option value="YN511"> 雨燕系列</option>
+              <option value="YY511"> 天语系列</option>
+              <option value="YAEA1"> 锋驭系列轿车</option>
+              <option value="SW11"> 辅料</option>
+              <option value="SW12"> 选装</option>
+            </select>
+          </div>
+          <div class="item-input">
+            <label>年份：</label>
+            <select >
+              <option value="">请选择 年份...</option>
+              <option value="2015"> 2015</option>
+            </select>
+          </div>
+          <div class="item-input">
+            <label>车型：</label>
+            <select class="width-200">
+              <option value="">请选择 车型...</option>
+              <option value="SC7161UACXK10"> YL1 NB 1.6 SGX 6AT</option>
+              <option value="SC7161UC2H11"> YL1 NB 1.6 DX MT（黑色内饰）</option>
+              <option value="SC7161UACXK11"> YL1 NB 1.6 SGX 6AT（黑色内饰）</option>
+              <option value="SC7161UACXH10"> YL1 NB 1.6 DX 6AT</option>
+              <option value="SC7161UACXJ10"> YL1 NB 1.6 SDX 6AT</option>
+              <option value="SC7161UACXJ11"> YL1 NB 1.6 SDX 6AT（黑色内饰）</option>
+              <option value="SC7161UACXH11"> YL1 NB 1.6 DX 6AT（黑色内饰）</option>
+              <option value="SC7161UC2H10"> YL1 NB 1.6 DX MT</option>
+              <option value="SC7161UBC2J11"> YL1 NB 1.6 SDX MT（黑色内饰）</option>
+            </select>
+          </div>
+        </div>
+        <div class="model-cols-2">
+          <div class="item-input">
+            <label>图号：</label>
+            <input type="text" />
+          </div>
+          <div class="item-input">
+            <label  class="width-104">图名称：</label>
+            <input type="text" />
+          </div>
+        </div>
+        <div class="model-cols-2">
+          <div class="item-input">
+            <label>件号：</label>
+            <input type="text" />
+          </div>
+          <div class="item-input">
+            <label class="width-104">零件名称：</label>
+            <input type="text" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="query-btn-group">
+      <a class="btn">重置</a>
+      <a class="btn">查询</a>
+    </div>
+  </div>
+  <div class="dialog-grid-table">
+
+    <div class="table-model-normal">
+      <table>
+        <thead>
+        <tr>
+          <th><div>车系<span class="icon-sort"></span></div></th>
+          <th><div class="sort-desc">年份<span class="icon-sort"></span></div></th>
+          <th><div class="sort-asc">车型<span class="icon-sort"></span></div></th>
+          <th>组别</th>
+          <th>图号</th>
+          <th>图名称</th>
+          <th>件号</th>
+          <th>零件名称</th>
+          <th>进入</th>
+        </tr>
+        </thead>
+        <tbody id="result-area">
+        <tr>
+          <td>启悦系列</td>
+          <td>2014</td>
+          <td>
+            <div title="YL1 NB 1.6 SDX 6AT">YL1 NB 1.6 SDX 6AT</div>
+          </td>
+          <td>底盘系</td>
+          <td>40000D78M25C000</td>
+          <td>
+            <div title="转向柱(Ⅱ)">转向柱(Ⅱ)</div>
+          </td>
+          <td>48481-68L50-000</td>
+          <td>
+            <div title="转向接头盖">转向接头盖</div>
+          </td>
+          <td>
+            <a href="#" target="_blank">进入目录</a>  <a href="#" target="_blank">进入目录</a>
+          </td>
+        </tr>
+        <tr>
+          <td>启悦系列</td>
+          <td>2014</td>
+          <td>
+            <div title="YL1 NB 1.6 SDX MT">YL1 NB 1.6 SDX MT</div>
+          </td>
+          <td>底盘系</td>
+          <td>40000D78M25C000</td>
+          <td>
+            <div title="转向柱(Ⅱ)">转向柱(Ⅱ)</div>
+          </td>
+          <td>48481-68L50-000</td>
+          <td>
+            <div title="转向接头盖">转向接头盖</div>
+          </td>
+          <td>
+            <a href="#" target="_blank">进入目录</a>
+          </td>
+        </tr>
+        <tr>
+          <td>启悦系列</td>
+          <td>2014</td>
+          <td>
+            <div title="YL1 NB 1.6 SGX 6AT（黑色内饰）">YL1 NB 1.6 SGX 6AT（黑色内饰）</div>
+          </td>
+          <td>底盘系</td>
+          <td>40000D78M25C000</td>
+          <td>
+            <div title="转向柱(Ⅱ)">转向柱(Ⅱ)</div>
+          </td>
+          <td>48481-68L50-000</td>
+          <td>
+            <div title="转向接头盖">转向接头盖</div>
+          </td>
+          <td>
+            <a href="#" target="_blank">进入目录</a>
+          </td>
+        </tr>
+        <tr>
+          <td>启悦系列</td>
+          <td>2014</td>
+          <td>
+            <div title="YL1 NB 1.6 SDX 6AT（黑色内饰）">YL1 NB 1.6 SDX 6AT（黑色内饰）</div>
+          </td>
+          <td>底盘系</td>
+          <td>40000D78M25C000</td>
+          <td>
+            <div title="转向柱(Ⅱ)">转向柱(Ⅱ)</div>
+          </td>
+          <td>48481-68L50-000</td>
+          <td>
+            <div title="转向接头盖">转向接头盖</div>
+          </td>
+          <td>
+            <a href="#" target="_blank">进入目录</a>
+          </td>
+        </tr>
+        <tr>
+          <td>启悦系列</td>
+          <td>2014</td>
+          <td>
+            <div title="YL1 NB 1.6 SDX MT（黑色内饰）">YL1 NB 1.6 SDX MT（黑色内饰）</div>
+          </td>
+          <td>底盘系</td>
+          <td>40000D78M25C000</td>
+          <td>
+            <div title="转向柱(Ⅱ)">转向柱(Ⅱ)</div>
+          </td>
+          <td>48481-68L50-000</td>
+          <td>
+            <div title="转向接头盖">转向接头盖</div>
+          </td>
+          <td>
+            <a href="#" target="_blank">进入目录</a>
+          </td>
+        </tr>
+        <tr>
+          <td>启悦系列</td>
+          <td>2014</td>
+          <td>
+            <div title="YL1 NB 1.6 DX 6AT">YL1 NB 1.6 DX 6AT</div>
+          </td>
+          <td>底盘系</td>
+          <td>40000D78M11C000</td>
+          <td>
+            <div title="转向柱(Ⅰ)">转向柱(Ⅰ)</div>
+          </td>
+          <td>48200-78M60-000</td>
+          <td>
+            <div title="转向柱总成 (精英)">转向柱总成 (精英)</div>
+          </td>
+          <td>
+            <a href="#" target="_blank">进入目录</a>
+          </td>
+        </tr>
+        <tr>
+          <td>启悦系列</td>
+          <td>2014</td>
+          <td>
+            <div title="YL1 NB 1.6 DX MT">YL1 NB 1.6 DX MT</div>
+          </td>
+          <td>底盘系</td>
+          <td>40000D78M11C000</td>
+          <td>
+            <div title="转向柱(Ⅰ)">转向柱(Ⅰ)</div>
+          </td>
+          <td>48200-78M60-000</td>
+          <td>
+            <div title="转向柱总成 (精英)">转向柱总成 (精英)</div>
+          </td>
+          <td>
+            <a href="#" target="_blank">进入目录</a>
+          </td>
+        </tr>
+        <tr>
+          <td>启悦系列</td>
+          <td>2014</td>
+          <td>
+            <div title="YL1 NB 1.6 DX 6AT（黑色内饰）">YL1 NB 1.6 DX 6AT（黑色内饰）</div>
+          </td>
+          <td>底盘系</td>
+          <td>40000D78M11C000</td>
+          <td>
+            <div title="转向柱(Ⅰ)">转向柱(Ⅰ)</div>
+          </td>
+          <td>48200-78M60-000</td>
+          <td>
+            <div title="转向柱总成 (精英)">转向柱总成 (精英)</div>
+          </td>
+          <td>
+            <a href="#" target="_blank">进入目录</a>
+          </td>
+        </tr>
+        <tr>
+          <td>启悦系列</td>
+          <td>2014</td>
+          <td>
+            <div title="YL1 NB 1.6 DX MT（黑色内饰）">YL1 NB 1.6 DX MT（黑色内饰）</div>
+          </td>
+          <td>底盘系</td>
+          <td>40000D78M11C000</td>
+          <td>
+            <div title="转向柱(Ⅰ)">转向柱(Ⅰ)</div>
+          </td>
+          <td>48200-78M60-000</td>
+          <td>
+            <div title="转向柱总成 (精英)">转向柱总成 (精英)</div>
+          </td>
+          <td>
+            <a href="#" target="_blank">进入目录</a>
+          </td>
+        </tr>
+        <tr>
+          <td>启悦系列</td>
+          <td>2014</td>
+          <td>
+            <div title="YL1 NB 1.6 DX 6AT">YL1 NB 1.6 DX 6AT</div>
+          </td>
+          <td>底盘系</td>
+          <td>40000D78M11C000</td>
+          <td>
+            <div title="转向柱(Ⅰ)">转向柱(Ⅰ)</div>
+          </td>
+          <td>31390-78M00-000</td>
+          <td>
+            <div title="电动动力转向电机">电动动力转向电机</div>
+          </td>
+          <td>
+            <a href="#" target="_blank">进入目录</a>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="dialog-grid-page">
+      <span class="page-num-box">
+          共<b>1955</b>页 /<b>19544</b>条记录
+      </span>
+      <a class="btn btn-first disable"></a>
+      <a class="btn btn-prev"></a>
+      <a class="btn btn-next"></a>
+      <a class="btn btn-last"></a>
+      <label>当前页码:</label>
+      <input type="text" value="1">
+      <a class="btn-go">GO</a>
+  </div>
+</div>
+</body>
+</html>

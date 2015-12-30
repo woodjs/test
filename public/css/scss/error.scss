@@ -1,0 +1,59 @@
+$fontSize: 14px;
+$color: #333;
+$bdColor: #ebebeb;
+$bgColor: #eee;
+$themeFontColor: #529bea;
+
+*{
+ padding:0;
+ margin:0;
+}
+body{
+ font-size:$fontSize;
+ background: #fff;
+ font-family: "Microsoft yahei", Arial;
+}
+a{
+ color: $themeFontColor;
+}
+
+.module-error{
+ width:1024px;
+ margin:150px auto 0;
+ .banner-error{
+  width:429px;
+  height:249px;
+  margin:0 auto;
+  background: url(images/error.png) center center no-repeat;
+ }
+ .info-error{
+  height:44px;
+  line-height: 44px;
+  width: 290px;
+  padding-left:25px;
+  margin:0 auto;
+  color:#ed1929;
+  font-size:22px;
+  text-align: center;
+  background: url(images/icon_close.png) 8px center no-repeat;
+ }
+ .btn-back{
+  cursor: pointer;
+  height:42px;
+  line-height: 42px;
+  text-align: center;
+  width: 150px;
+  font-size:18px;
+  margin:30px auto;
+  color:#fff;
+  background-color:#007acd;
+  border-width:1px;
+  border-style:solid;
+  border-color:#017ec8 #0074c3 #0070bd #007cca;
+  transition:background-color .3s ease-in,box-shadow .3s ease-in;
+  &:hover{
+   background-color:#19a1fd;
+   box-shadow:0 0 6px -2px #08558a;
+  }
+ }
+}
