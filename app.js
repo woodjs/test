@@ -39,7 +39,6 @@ app.use(expressSession({
     })
 }));
 app.use(express.static(path.join(__dirname, 'public')));
-
 app.use('/', route_index);
 app.use('/login', route_login);
 app.use('/list', route_list);
