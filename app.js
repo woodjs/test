@@ -4,8 +4,9 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var expressSession = require('express-session');
-var MongoStore = require('connect-mongo')(expressSession);
+//var expressSession = require('express-session');
+//var MongoStore = require('connect-mongo')(expressSession);
+var connectRedisSessions = require('connect-redis-sessions');
 
 var db = require('./config/db');
 var route_index = require('./routes/index');
@@ -26,17 +27,31 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(expressSession({
-    secret: '123456',
-    name: 'usersid',
-    cookie: {maxAge: 80000},
-    resave: false,
-    saveUninitialized: true,
-    store: new MongoStore({
-        host: '127.0.0.1',
-        port: 27017,
-        db: 'sessions'
-    })
+//app.use(expressSession({
+//    secret: '123456',
+//    name: 'usersid',
+//    cookie: {maxAge: 80000},
+//    resave: false,
+//    saveUninitialized: true,
+//    store: new MongoStore({
+//        host: '127.0.0.1',
+//        port: 27017,
+//        db: 'sessions'
+//    })
+//}));
+app.use(connectRedisSessions({
+  app: 'baic', //所属总作用域
+  cookie: {
+    maxAge: 1000 * 60 * 300,
+    path: '/', //cookie路径
+    httpOnly: true
+  },
+  host: '192.168.1.108',
+  port: 6379,
+  namespace: '', //redis key前缀
+  ttl: 60 * 60, //过期时间，单位s，默认7200
+  wipe: 60 * 10, //定期清除超时session间隔时间，单位s，默认600
+  trustProxy: false //只接受https cookies
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', route_index);
