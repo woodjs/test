@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      .progress-box{
+        text-align: center;
+        width: 320px;
+        border: 1px solid #999;
+        padding: 1px;
+        height: 8px;
+        position: absolute;
+        left:50%;
+        top:50%;
+        margin-left: -161px;
+        margin-top:-6px;
+      }
+      .progress-box .progress-bar{
+        width: 0;
+        height: 100%;
+        background-color: #6188f5;
+        background-repeat: repeat-x;
+        background-position: 0 0;
+        background-size: 16px 8px;
+        background-image: linear-gradient(315deg,transparent,transparent 33%,rgba(0,0,0,.12) 33%,rgba(0,0,0,.12) 66%,transparent 66%,transparent);
+      }
+      .progress-box .progress-text{
+        position: absolute;
+        top:12px;
+        left: 50%;
+        width:150px;
+        margin-left:-75px;
+        line-height: 16px;
+        font-size: 12px;
+        text-align: center;
+        color:#666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="progress-box">
+      <div class="progress-bar"></div>
+      <div class="progress-text"></div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var progressBar = document.querySelector('.progress-bar');
+        var progressText = document.querySelector('.progress-text');
+        var curPercent = 0;
+
+        var interId = setInterval(function () {
+          if (curPercent < 100) {
+            progressBar.style.width = (++curPercent) + '%';
+            progressText.textContent = curPercent + '%';
+          } else {
+            clearInterval(interId);
+          }
+        }, 30);
+      }, false);
+    </script>
+  </body>
+</html>
