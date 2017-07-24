@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE servinfo PUBLIC "-//GM//DTD Service Manual//EN" "sm.dtd">
+<sm extract-type="book" language="zh-CN" pub-name="宝骏730 2017款维修手册0000094925" region-desc="" vehicle-country-sale-desc="" model-desc="" model-year="2017">
+	<section secnum="1" language="zh-CN">
+		<title>一般信息</title>
+		<subsection subsecnum="01" language="zh-CN">
+			<title>空气/风噪声</title>
+			<microsection  language="zh-CN">
+				<title>维修指南</title>
+				<cell cell-number="0000097843" cell-name="内部风噪声"></cell>
+				<cell cell-number="0000097844" cell-name="外部风噪声"></cell>
+			</microsection>
+		</subsection>
+	</section>
+	<section secnum="2" language="zh-CN">
+		<title>传动系统/ 车桥</title>
+		<subsection subsecnum="01" language="zh-CN">
+			<title>传动轴</title>
+			<microsection  language="zh-CN">
+				<title>诊断信息和程序</title>
+				<cell cell-number="0000097908" cell-name="传动轴诊断"></cell>
+			</microsection>
+			<microsection  language="zh-CN">
+				<title>规格</title>
+				<cell cell-number="0000097910" cell-name="紧固件紧固规格"></cell>
+			</microsection>
+		</subsection>
+		<subsection subsecnum="02" language="zh-CN">
+			<title>后驱动桥</title>
+			<microsection  language="zh-CN">
+				<title>维修指南</title>
+				<cell cell-number="0000097927" cell-name="差速器油的更换"></cell>
+			</microsection>
+			<microsection  language="zh-CN">
+				<title>专用工具和设备</title>
+				<cell cell-number="0000097921" cell-name="专用工具"></cell>
+			</microsection>
+			<microsection  language="zh-CN">
+				<title>规格</title>
+				<cell cell-number="0000097916" cell-name="近似油液容量"></cell>
+				<cell cell-number="0000097917" cell-name="紧固件紧固规格"></cell>
+			</microsection>
+		</subsection>
+		<subsection subsecnum="03" language="zh-CN">
+			<title>车轮驱动轴</title>
+			<microsection  language="zh-CN">
+				<title>规格</title>
+				<cell cell-number="0000097952" cell-name="紧固件紧固规格"></cell>
+			</microsection>
+			<microsection  language="zh-CN">
+				<title>专用工具和设备</title>
+				<cell cell-number="0000097935" cell-name="专用工具"></cell>
+			</microsection>
+		</subsection>
+	</section>
+	<section secnum="3" language="zh-CN">
+		<title>制动器</title>
+		<subsection subsecnum="01" language="zh-CN">
+			<title>驻车制动器</title>
+			<microsection  language="zh-CN">
+				<title>诊断信息和程序</title>
+				<cell cell-number="0000098073" cell-name="症状—驻车制动器"></cell>
+				<cell cell-number="0000098072" cell-name="驻车制动器不能保持制动状态或释放"></cell>
+				<cell cell-number="0000098074" cell-name="驻车制动系统的诊断"></cell>
+			</microsection>
+			<microsection  language="zh-CN">
+				<title>维修指南</title>
+				<cell cell-number="0000098068" cell-name="驻车制动器前拉线的更换"></cell>
+				<cell cell-number="0000098066" cell-name="驻车制动器拉杆的更换"></cell>
+				<cell cell-number="0000098070" cell-name="驻车制动器后拉线的更换"></cell>
+				<cell cell-number="0000098069" cell-name="驻车制动器指示灯开关的更换"></cell>
+				<cell cell-number="0000098067" cell-name="驻车制动器的调整"></cell>
+			</microsection>
+			<microsection  language="zh-CN">
+				<title>规格</title>
+				<cell cell-number="0000098062" cell-name="紧固件紧固规格"></cell>
+			</microsection>
+		</subsection>
+	</section>
+</sm>

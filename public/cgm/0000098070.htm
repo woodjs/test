@@ -1,0 +1,74 @@
+<HTML>
+<HEAD>
+<META content="IE=8.0000" http-equiv="X-UA-Compatible">
+<META charset="UTF-8">
+<SCRIPT type=text/javascript>
+if (self == top) {
+document.documentElement.style.display = 'block'; 
+} else { 
+top.location = self.location;
+} 
+window.onload = function() {
+var objs = xGetElementsByTagName('object');
+for (var i = 0; i < objs.length; i++) {
+if (objs[i].getAttribute("type") === "image/cgm") {
+window.document.focus();
+xGetElementById('dBody').focus();
+window.setTimeout("window.document.focus()", 1000);
+window.setTimeout("xGetElementById('dBody').focus()", 1000);
+try {
+new ActiveXObject('METAWEB.MetaWebCtrl.1');
+} catch (e) {
+alert("SI requires the use of an enhanced  graphics viewer.  Click OK for installation instructions.");
+window.location.assign("/gsi/cgmpluginInstall.do");
+}
+break;
+}
+}
+xAddEventListener(window, "resize", reSizeDivision, false);
+reSizeDivision();
+addScrollSave();
+xGetElementById('dBody').scrollTop = xGetElementById('scrollSave').value;
+};
+window.onunload = function() {
+removeScrollSave();
+};
+</SCRIPT>
+</HEAD>
+<BODY lang=en-US>
+<h1>维修指南</h1>
+<FORM name=CellHandlerForm onsubmit="JavaScript: return true;" action=/gsi/cellHandler.do method=post>
+<DIV id=figure xmlns:gm="http://www.gm.com" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<DIV id=0000010490 width="870" height="612">
+<GM:FIGURE-GROUP>
+<OBJECT width=892 height=680 id=0000010490 classid=CLSID:B789F873-EB93-11D2-A6D8-00A0241989B9 type=image/cgm>
+<PARAM NAME="src" VALUE="0000010490.cgm">
+</OBJECT>
+</GM:FIGURE-GROUP>
+<GM:FINISH>
+</GM:FINISH>
+<A id=button0000010490 onclick=cgmGraphic(0000010490)/>
+<SCRIPT>
+function cgmGraphic(id){
+var myNodeList = document.getElementById(id);
+var buttonConcat = "button";
+var button =document.getElementById(buttonConcat.concat(id));
+button.style.visibility="hidden";
+//var theObject = "3352868.cgm";
+var theObject = myNodeList.getElementsByTagName("object")[0];
+theObject.width = screen.availWidth*.97;
+theObject.height = screen.availHeight*.87;
+var myWindow = window.open("", "_self");
+myWindow.document.write(myNodeList.innerHTML);
+location.reload();
+}
+</SCRIPT>
+<DIV style="VISIBILITY: hidden">
+
+</DIV>
+</DIV>
+</DIV>
+</FORM>
+
+</BODY>
+</HTML>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>cgm</title>
+  <script type="text/javascript" src="../js/lib/VizExView.js"></script>
+</head>
+<body>
+
+  <object id="test" src="../cgm/0000010110.cgm"></object>
+
+  <canvas id="cgm" class="WebCGMDocument" src="../cgm/0000010110.cgm" toolbar="on"
+          style="width:450px;height:345px;" onload="onLoad()"></canvas>
+
+  <script type="text/javascript">
+    var test = document.getElementById('test');
+
+    test.getWebCGMDocument();
+    debugger;
+  </script>
+
+  <script type="text/javascript">
+
+    function onLoad() {
+      var cgmDoc = document.getElementById('cgm').getWebCGMDocument();
+
+      cgmDoc.addEventListener("click", function (e) {
+
+        console.log(e);
+      });
+    }
+
+  </script>
+
+</body>
+</html>

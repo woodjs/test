@@ -1,0 +1,524 @@
+<HTML>
+<HEAD>
+<META content="IE=8.0000" http-equiv="X-UA-Compatible">
+<META charset="UTF-8">
+<SCRIPT type=text/javascript>
+if (self == top) {
+document.documentElement.style.display = 'block'; 
+} else { 
+top.location = self.location;
+} 
+window.onload = function() {
+var objs = xGetElementsByTagName('object');
+for (var i = 0; i < objs.length; i++) {
+if (objs[i].getAttribute("type") === "image/cgm") {
+window.document.focus();
+xGetElementById('dBody').focus();
+window.setTimeout("window.document.focus()", 1000);
+window.setTimeout("xGetElementById('dBody').focus()", 1000);
+try {
+new ActiveXObject('METAWEB.MetaWebCtrl.1');
+} catch (e) {
+alert("SI requires the use of an enhanced  graphics viewer.  Click OK for installation instructions.");
+window.location.assign("/gsi/cgmpluginInstall.do");
+}
+break;
+}
+}
+xAddEventListener(window, "resize", reSizeDivision, false);
+reSizeDivision();
+addScrollSave();
+xGetElementById('dBody').scrollTop = xGetElementById('scrollSave').value;
+};
+window.onunload = function() {
+removeScrollSave();
+};
+</SCRIPT>
+</HEAD>
+<BODY lang=en-US>
+<h1>规格</h1>
+<FORM name=CellHandlerForm onsubmit="JavaScript: return true;" action=/gsi/cellHandler.do method=post>
+<DIV id=figure xmlns:gm="http://www.gm.com" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<DIV id=0000010110 width="870" height="612">
+<GM:FIGURE-GROUP>
+<OBJECT width=892 height=680 id=0000010110 classid=CLSID:B789F873-EB93-11D2-A6D8-00A0241989B9 type=image/cgm>
+<PARAM NAME="src" VALUE="0000010110.cgm">
+</OBJECT>
+</GM:FIGURE-GROUP>
+<GM:FINISH>
+</GM:FINISH>
+<A id=button0000010110 onclick=cgmGraphic(0000010110)/>
+<SCRIPT>
+function cgmGraphic(id){
+var myNodeList = document.getElementById(id);
+var buttonConcat = "button";
+var button =document.getElementById(buttonConcat.concat(id));
+button.style.visibility="hidden";
+//var theObject = "3352868.cgm";
+var theObject = myNodeList.getElementsByTagName("object")[0];
+theObject.width = screen.availWidth*.97;
+theObject.height = screen.availHeight*.87;
+var myWindow = window.open("", "_self");
+myWindow.document.write(myNodeList.innerHTML);
+location.reload();
+}
+</SCRIPT>
+<DIV style="VISIBILITY: hidden">
+
+	<!-- LOC -->
+	<GM:CALLOUT id="LOC">
+		<GM:EXTENDED-LINK inline="true">
+			<GM:LOCATOR 
+				title =""
+				href ="JavaScript:window.location.href('.htm')"
+				xml:link ="locator">
+			</GM:LOCATOR> 
+		</GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- DESC -->
+	<GM:CALLOUT id="DESC">
+		<GM:EXTENDED-LINK inline="true">
+			<GM:LOCATOR 
+				title =""
+				href ="JavaScript:window.location.href('.htm')"
+				xml:link ="locator">
+			</GM:LOCATOR> 
+		</GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- COMP -->
+	<GM:CALLOUT id="COMP">
+		<GM:EXTENDED-LINK inline="true">
+			<GM:LOCATOR 
+				title =""
+				href ="JavaScript:window.location.href('.htm')"
+				xml:link ="locator">
+			</GM:LOCATOR> 
+		</GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- PREV -->
+	<GM:CALLOUT id="PREV">
+		<GM:EXTENDED-LINK inline="true">
+			<GM:LOCATOR 
+				title ="aaaaaaaaaaaaaaaaaaaaaaa"
+				href ="JavaScript:window.location.href('3354779.htm')"
+				xml:link ="locator">
+			</GM:LOCATOR> 
+		</GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- CAV_1B4 -->
+	<GM:CALLOUT id="CAV_1B4">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> 1B4  <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- CAV_1A4 -->
+	<GM:CALLOUT id="CAV_1A4">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> 1A4  <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- 8 -->
+	<GM:CALLOUT id="8">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> Instrument Panel Lamp Supply Voltage
+(1)  <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- 8_RD/BK -->
+	<GM:CALLOUT id="8_RD/BK">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> 8 RD/BK  <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- CAV_2C5 -->
+	<GM:CALLOUT id="CAV_2C5">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> 2C5  <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- CAV_2C2 -->
+	<GM:CALLOUT id="CAV_2C2">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> 2C2  <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- CAV_2C1 -->
+	<GM:CALLOUT id="CAV_2C1">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> 2C1  <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- CAV_2C3 -->
+	<GM:CALLOUT id="CAV_2C3">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> 2C3  <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- 34 -->
+	<GM:CALLOUT id="34">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> Front Fog Lamp Supply Voltage  <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- 34_BN/WH -->
+	<GM:CALLOUT id="34_BN/WH">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> 34 BN/WH  <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- CAV_10 -->
+	<GM:CALLOUT id="CAV_10">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> 10  <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- 113 -->
+	<GM:CALLOUT id="113">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> Windshield Wiper Switch On Signal  <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- 113_WH -->
+	<GM:CALLOUT id="113_WH">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> 113 WH  <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- CAV_9 -->
+	<GM:CALLOUT id="CAV_9">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> 9  <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- 113_WH -->
+	<GM:CALLOUT id="113_WH">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> 113 WH  <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- CAV_8 -->
+	<GM:CALLOUT id="CAV_8">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> 8  <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- 112 -->
+	<GM:CALLOUT id="112">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> Windshield Wiper Switch Low/Pulse
+Signal  <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- 112_BN/YE -->
+	<GM:CALLOUT id="112_BN/YE">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> 112 BN/YE  <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- CAV_1 -->
+	<GM:CALLOUT id="CAV_1">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> 1  <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- 112_BN/YE -->
+	<GM:CALLOUT id="112_BN/YE">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> 112 BN/YE  <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- 112_BN/YE -->
+	<GM:CALLOUT id="112_BN/YE">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> 112 BN/YE  <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- 112_D-GN/YE -->
+	<GM:CALLOUT id="112_D-GN/YE">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> 112 D-GN/YE  <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- 1050 -->
+	<GM:CALLOUT id="1050">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> Ground  <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- 1050_BK -->
+	<GM:CALLOUT id="1050_BK">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> 1050 BK  <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- CAV_2 -->
+	<GM:CALLOUT id="CAV_2">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> 2  <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- 1050_BK -->
+	<GM:CALLOUT id="1050_BK">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> 1050 BK  <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- CAV_12 -->
+	<GM:CALLOUT id="CAV_12">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> 12  <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- 1050_BK -->
+	<GM:CALLOUT id="1050_BK">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> 1050 BK  <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- CAV_5 -->
+	<GM:CALLOUT id="CAV_5">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> 5  <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- CAV_20 -->
+	<GM:CALLOUT id="CAV_20">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> 20  <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- CAV_4 -->
+	<GM:CALLOUT id="CAV_4">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> 4  <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- H_REF -->
+	<GM:CALLOUT id="H_REF">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none">H <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- J218 -->
+	<GM:CALLOUT id="J218">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none">J218 <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- G102 -->
+	<GM:CALLOUT id="G102">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none">G102 <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="true">
+			<GM:LOCATOR 
+				title =" "
+				href ="JavaScript:window.location.href('3354709.htm?cgmName=2210849')"
+				xml:link ="locator"
+				behavior="pictseqno(1,_self).id(G102,highlight)">
+			</GM:LOCATOR> 
+		</GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- INTERIOR -->
+	<GM:CALLOUT id="INTERIOR">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none">INTERIOR LAMP/ALERT F4 15A <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- X200 -->
+	<GM:CALLOUT id="X200">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none">X200 <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="true">
+			<GM:LOCATOR 
+				title =" "
+				href ="JavaScript:window.location.href('3354700.htm?cgmName=2210841')"
+				xml:link ="locator"
+				behavior="pictseqno(1,_self).id(X200,highlight)">
+			</GM:LOCATOR> 
+			<GM:LOCATOR 
+				title =" "
+				href ="JavaScript:window.location.href('3354703.htm?cgmName=2210843')"
+				xml:link ="locator"
+				behavior="pictseqno(1,_self).id(X200,highlight)">
+			</GM:LOCATOR> 
+			<GM:LOCATOR 
+				title =" "
+				href ="JavaScript:window.location.href('3354709.htm?cgmName=2210849')"
+				xml:link ="locator"
+				behavior="pictseqno(1,_self).id(X200,highlight)">
+			</GM:LOCATOR> 
+		</GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- X402 -->
+	<GM:CALLOUT id="X402">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none">X402 <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="true">
+			<GM:LOCATOR 
+				title =" "
+				href ="JavaScript:window.location.href('3354821.htm?cgmName=2210852')"
+				xml:link ="locator"
+				behavior="pictseqno(1,_self).id(X402,highlight)">
+			</GM:LOCATOR> 
+		</GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- X300 -->
+	<GM:CALLOUT id="X300">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none">X300 <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- X400 -->
+	<GM:CALLOUT id="X400">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none">X400 <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="true">
+			<GM:LOCATOR 
+				title =" "
+				href ="JavaScript:window.location.href('3354821.htm?cgmName=2210852')"
+				xml:link ="locator"
+				behavior="pictseqno(1,_self).id(X400,highlight)">
+			</GM:LOCATOR> 
+		</GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- X51A -->
+	<GM:CALLOUT id="X51A">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none">X51A <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="true">
+			<GM:LOCATOR 
+				title ="aaa"
+				href ="JavaScript:window.location.href('0000098068.htm?cgmName=2210846')"
+				xml:link ="locator"
+				behavior="pictseqno(1,_self).id(X51A,highlight)">
+			</GM:LOCATOR> 
+			<GM:LOCATOR 
+				title ="bbb"
+				href ="JavaScript:window.location.href('0000098074.htm?cgmName=2210843')"
+				xml:link ="locator"
+				behavior="pictseqno(1,_self).id(X51A,highlight)">
+			</GM:LOCATOR> 
+		</GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- E29R -->
+	<GM:CALLOUT id="E29R">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- K33 -->
+	<GM:CALLOUT id="K33">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="true">
+			<GM:LOCATOR 
+				title =" "
+				href ="JavaScript:window.location.href('3354700.htm?cgmName=2210841')"
+				xml:link ="locator"
+				behavior="pictseqno(1,_self).id(K33,highlight)">
+			</GM:LOCATOR> 
+		</GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+	<!-- KR57 -->
+	<GM:CALLOUT id="KR57">
+		<GM:CALLOUT-TEXT>
+			<DIV style="DISPLAY: none"> <BR/></DIV>
+		</GM:CALLOUT-TEXT>
+		<GM:EXTENDED-LINK inline="false">  </GM:EXTENDED-LINK>
+	</GM:CALLOUT>
+
+</DIV>
+</DIV>
+</DIV>
+</FORM>
+
+</BODY>
+</HTML>
