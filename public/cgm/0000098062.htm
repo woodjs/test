@@ -5,8 +5,16 @@
 <SCRIPT type=text/javascript>
 if (self == top) {
 document.documentElement.style.display = 'block'; 
-} else { 
-top.location = self.location;
+} else {
+//top.location = self.location;
+
+	document.body.addEventListener('click', function () {
+		console.log(4444444);
+	});
+//	setTimeout(function () {
+//
+//		window.location.href = 'http://localhost:1212/test/public/html/contact.html';
+//	}, 3000);
 } 
 window.onload = function() {
 var objs = xGetElementsByTagName('object');

@@ -3,34 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <title>cgm</title>
-  <script type="text/javascript" src="../js/lib/VizExView.js"></script>
 </head>
 <body>
-
-  <object id="test" src="../cgm/0000010110.cgm"></object>
-
-  <canvas id="cgm" class="WebCGMDocument" src="../cgm/0000010110.cgm" toolbar="on"
-          style="width:450px;height:345px;" onload="onLoad()"></canvas>
-
+  <h1>here is top window!</h1>
+  <iframe id="frame" src="../cgm/0000098062.htm" onload="onLoad(this)" onunload="onUnload(this)"  onerror="onError(this)"></iframe>
+  <button>跳转</button>
   <script type="text/javascript">
-    var test = document.getElementById('test');
+    var frame = document.getElementById('frame');
+    var btn = document.querySelector('button');
 
-    test.getWebCGMDocument();
-    debugger;
+    btn.addEventListener('click', function () {
+      frame.setAttribute('src', 'http://localhost:1212/test/public/cgm/0000098066.htm');
+    })
   </script>
 
   <script type="text/javascript">
 
-    function onLoad() {
-      var cgmDoc = document.getElementById('cgm').getWebCGMDocument();
+    function onLoad(that) {
 
-      cgmDoc.addEventListener("click", function (e) {
+      console.log(that.contentWindow.location.toString());
+      console.log('loaded!!!');
 
-        console.log(e);
+      frame.contentWindow.addEventListener('click', function () {
+        console.log('child document clicked!');
       });
     }
 
-  </script>
+    function onUnload(that) {
+      console.log(that.contentWindow.location.toString());
+      console.log('unloaded!!!');
+    }
 
+    function onError(that) {
+      console.log(that.contentWindow.location.toString());
+      console.log('error!!!');
+    }
+
+    setInterval(function () {
+      console.log('current src:' + frame.contentWindow.location.toString());
+    }, 1000);
+  </script>
 </body>
 </html>
